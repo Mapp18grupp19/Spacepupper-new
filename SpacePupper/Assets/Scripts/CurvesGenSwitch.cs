@@ -58,25 +58,25 @@ public class CurvesGenSwitch : MonoBehaviour
                 Destroy(thisChild.gameObject);
                 GameObject oldBelt = otherChild.GetComponent<GameObject>();
                 GameObject nextBelt = oldBelt;
-                do {
-                    switch (pause.difficulty) {
-                        case 1:
+                //do {
+                    //switch (pause.difficulty) {
+                        //case 1:
                             nextBelt = asteroidBeltDifficulty1[Random.Range(0, asteroidBeltDifficulty1.Length)];
-                            break;
-                        case 2:
-                            nextBelt = asteroidBeltDifficulty2[Random.Range(0, asteroidBeltDifficulty2.Length)];
-                            break;
-                        case 3:
-                            nextBelt = asteroidBeltDifficulty3[Random.Range(0, asteroidBeltDifficulty3.Length)];
-                            break;
-                        case 4:
-                            nextBelt = asteroidBeltDifficulty4[Random.Range(0, asteroidBeltDifficulty4.Length)];
-                            break;
-                        case 5:
-                            nextBelt = asteroidBeltDifficulty5[Random.Range(0, asteroidBeltDifficulty5.Length)];
-                            break;
-                    }
-                } while (oldBelt.Equals(nextBelt));
+                            //break;
+                        //case 2:
+                        //    nextBelt = asteroidBeltDifficulty2[Random.Range(0, asteroidBeltDifficulty2.Length)];
+                        //    break;
+                        //case 3:
+                        //    nextBelt = asteroidBeltDifficulty3[Random.Range(0, asteroidBeltDifficulty3.Length)];
+                        //    break;
+                        //case 4:
+                        //    nextBelt = asteroidBeltDifficulty4[Random.Range(0, asteroidBeltDifficulty4.Length)];
+                        //    break;
+                        //case 5:
+                        //    nextBelt = asteroidBeltDifficulty5[Random.Range(0, asteroidBeltDifficulty5.Length)];
+                        //    break;
+                    //}
+                //} while (oldBelt.Equals(nextBelt));
                 Instantiate(nextBelt, (otherChild.position + Vector3.right * resetPosition), new Quaternion(), this.transform);
             }
         }
