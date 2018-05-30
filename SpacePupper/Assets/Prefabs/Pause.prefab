@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1558622805770860}
+  m_IsPrefabParent: 1
+--- !u!1 &1558622805770860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4474365819265270}
+  - component: {fileID: 114692029444951160}
+  - component: {fileID: 82625609594135198}
+  m_Layer: 0
+  m_Name: Pause
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4474365819265270
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558622805770860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82625609594135198
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558622805770860}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114692029444951160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558622805770860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02007c3044309114f82e5d33221b961b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swipeCountdown: {fileID: 0}
+  swipeResult: {fileID: 0}
+  difficulty: 1
+  swipesDifficulty1:
+  - {fileID: 1591727989638192, guid: 0c6b5bdc7d364c041b5244a0b65b7412, type: 2}
+  - {fileID: 1051545764172172, guid: 0ca73bbe90144e04bac5cbe32bc8c858, type: 2}
+  - {fileID: 1845153974815016, guid: 8cf56828aa33de84fbab5afe8b16b9d1, type: 2}
+  - {fileID: 1847001027491184, guid: a2a92c782145cfd499296747693981a4, type: 2}
+  swipesDifficulty2:
+  - {fileID: 1065354803643042, guid: 93015019662bca944a69a3271722436c, type: 2}
+  - {fileID: 1859657493955388, guid: 47c940a3a45aec446b88a319bebef59b, type: 2}
+  - {fileID: 1287158937013796, guid: 2bcadc00d01ac9e4c8ddd91c2cbd3369, type: 2}
+  - {fileID: 1010262943075244, guid: 1ad0ae7045bfb0c4fa732f9095ed4150, type: 2}
+  swipesDifficulty3:
+  - {fileID: 1514499474648318, guid: 7e968062936da814c868e6078fc145e1, type: 2}
+  - {fileID: 1159918510452896, guid: 1dbfa5d4fa78c8c4eb2e97c596f3b573, type: 2}
+  - {fileID: 1270593313037610, guid: d36db3d5a52640e4a8066c8b0d7b4c36, type: 2}
+  - {fileID: 1821798909374816, guid: 541bf226e3085894c998fcd3c8d3bebc, type: 2}
+  swipesDifficulty4:
+  - {fileID: 1858373512702882, guid: 30ea5d4809a45804b949fc3d40b2794d, type: 2}
+  - {fileID: 1877838382975742, guid: aaae5a27da880b04ea6e6c8ba427e5ce, type: 2}
+  - {fileID: 1494962580925008, guid: 75e230809dd335544963410e1bcbbf3c, type: 2}
+  - {fileID: 1337547089671884, guid: 45b30d79ebbe3d94ea7517095e37a79a, type: 2}
+  swipesDifficulty5:
+  - {fileID: 1399412049092842, guid: c5b06ce3647514a4b94a6dd12315d90a, type: 2}
+  - {fileID: 1539459030348426, guid: 8fdfe5fe9dd758d469d029d7826d5605, type: 2}
+  - {fileID: 1873729977883168, guid: 131cbd44ff04fea4bb8ceca941f9e7e8, type: 2}
+  - {fileID: 1562331536602584, guid: c56a41ecdff5f7540b5f567f94c9f384, type: 2}
+  timeUntilSwipeInterval:
+  - 12
+  - 20
+  swiping: 0
+  gameSpeed: 1
+  scoreSpeed: 1
+  scoreSpeedIncrease: 0.4
+  three: {fileID: 8300000, guid: f13010484c47d79409c1eee61e156201, type: 3}
+  two: {fileID: 8300000, guid: bb1b40d9fc1667949a8bf366eaf3b0ab, type: 3}
+  one: {fileID: 8300000, guid: a3b2c3ec6d9059e4c855c89bdb8296b3, type: 3}
+  swipe: {fileID: 8300000, guid: 3e133a4f7fe8b51459f58066ceba764a, type: 3}
