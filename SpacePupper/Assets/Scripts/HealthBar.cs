@@ -6,14 +6,12 @@ using UnityEngine.SceneManagement;
 public class HealthBar : MonoBehaviour {
 
     public Movement player;
-    //  public GameObject[] heads;
     public GameObject head1, head2, head3;
 
     void Start() {
         head1.gameObject.SetActive(true);
         head2.gameObject.SetActive(true);
         head3.gameObject.SetActive(true);
-        //gameOver.gameObject.SetActive(false); // detta ska vara loadscene("DeathScene")
     }
     public void Update()
     {
@@ -32,8 +30,6 @@ public class HealthBar : MonoBehaviour {
                 break;
             case 0:
                 head1.gameObject.SetActive(false);
-                //gameOver.gameObject.SetActive(true);
-                //Time.timeScale = 0;
                 break;
         }
     }
