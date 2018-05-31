@@ -27,7 +27,6 @@ public class PickUpCD : MonoBehaviour
         if (other.CompareTag("CD"))
         {
             //collide = true;
-            Destroy(other.gameObject);
             AudioClip clip;
             //playerAudio.pitch = Random.Range(0.9f, 1.1f);
             //playerAudio.PlayOneShot(onTrigger, 0.5f);
@@ -44,7 +43,20 @@ public class PickUpCD : MonoBehaviour
                 healthBar.AddHead();
 
             }
+
+            other.transform.Find("CDSystemrticleSystem").GetComponent<ParticleSystem>().Play();
+            other.GetComponent<SpriteRenderer>().enabled = false;
+            other.GetComponent<CircleCollider2D>().enabled = false;
+            StartCoroutine(RemoveCracker(other.gameObject));
         }
     }
+
+    IEnumerator RemoveCracker(GameObject obj)
+    {
+        yield return new WaitForSeconds(4f);
+        Destroy(obj);
+    }
+
+
 }
 
