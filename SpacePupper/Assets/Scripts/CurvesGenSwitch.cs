@@ -56,9 +56,9 @@ public class CurvesGenSwitch : MonoBehaviour
             if (thisChild.position.x < endPosition)
             {
                 Destroy(thisChild.gameObject);
-                //GameObject oldBelt = otherChild.GetComponent<GameObject>();
+                GameObject oldBelt = otherChild.GetComponent<GameObject>();
                 GameObject nextBelt = null;
-                //do {
+                //do{
                 switch (pause.difficulty)
                 {
                     case 1:
