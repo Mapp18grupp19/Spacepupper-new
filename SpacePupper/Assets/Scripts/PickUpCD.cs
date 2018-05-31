@@ -27,6 +27,7 @@ public class PickUpCD : MonoBehaviour
         if (other.CompareTag("CD"))
         {
             //collide = true;
+            Debug.Log(other.gameObject);
             Destroy(other.gameObject);
             AudioClip clip;
             //playerAudio.pitch = Random.Range(0.9f, 1.1f);
@@ -40,9 +41,9 @@ public class PickUpCD : MonoBehaviour
 
             if (player.playerHealth < 3)
             {
+                Debug.Log("Add life");
                 player.playerHealth++;
                 healthBar.AddHead();
-
             }
         }
     }
