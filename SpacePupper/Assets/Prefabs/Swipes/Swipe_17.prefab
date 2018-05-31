@@ -3344,7 +3344,7 @@ MonoBehaviour:
   drawing: 0
   perfect: 1
   failed: 0
-  particles: {fileID: 0}
+  particles: {fileID: 1851516014910080}
 --- !u!114 &114938177177920686
 MonoBehaviour:
   m_ObjectHideFlags: 1
