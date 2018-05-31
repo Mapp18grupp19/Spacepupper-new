@@ -5,16 +5,17 @@ using UnityEngine;
 public class PickUpCD : MonoBehaviour
 {
     public AudioClip[] clips;
-    //public AudioClip onTrigger;
+    public AudioClip onTrigger;
     public HealthBar healthBar;
     private Movement player;
-    //private AudioSource playerAudio;
+    private AudioSource playerAudio;
+
     //private bool collide;
 
     void Start()
     {
         player = GetComponent<Movement>();
-        //playerAudio = GetComponent<AudioSource>();
+        playerAudio = GetComponent<AudioSource>();
         //collide = false;
     }
 
@@ -28,8 +29,9 @@ public class PickUpCD : MonoBehaviour
         {
             //collide = true;
             AudioClip clip;
-            //playerAudio.pitch = Random.Range(0.9f, 1.1f);
-            //playerAudio.PlayOneShot(onTrigger, 0.5f);
+
+            playerAudio.pitch = Random.Range(0.9f, 1.1f);
+            playerAudio.PlayOneShot(onTrigger, 0.5f);
             do
             {
                 clip = clips[Random.Range(0, clips.Length)];
