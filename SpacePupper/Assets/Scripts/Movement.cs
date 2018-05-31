@@ -92,8 +92,10 @@ public class Movement : MonoBehaviour {
                 fireParticles.localPosition = new Vector3(-2.2f, 0.8f);
                 fireParticles.localRotation.Set(fireParticles.localRotation.x, fireParticles.localRotation.y, 90f, fireParticles.localRotation.w);
             }
-
-            transform.position = Vector3.MoveTowards(transform.position, target, delta);
+            if (!pause.swiping)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target, delta);
+            }
         }
 
         else {

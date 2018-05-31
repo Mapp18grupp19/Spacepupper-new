@@ -57,12 +57,12 @@ GameObject:
   - component: {fileID: 198711285086543014}
   - component: {fileID: 199768467981638048}
   m_Layer: 0
-  m_Name: CrackerParticleSystem
+  m_Name: CDSystemrticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4028581473348262
 Transform:
   m_ObjectHideFlags: 1
@@ -196,7 +196,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1654355366
+  randomSeed: 319581994
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3557,7 +3557,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: -380822302
   InitialModule:
     serializedVersion: 3
     enabled: 1
