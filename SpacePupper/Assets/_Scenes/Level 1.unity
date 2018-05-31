@@ -2197,7 +2197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 344.99, y: -60.389}
+  m_AnchoredPosition: {x: 344.99, y: -60.388916}
   m_SizeDelta: {x: 360.39, y: 72.87}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &637590431 stripped
@@ -2658,6 +2658,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 24eb5d76538155647ae123148f232ae3, type: 3}
   - {fileID: 8300000, guid: 715efade3f807954297acaca62b202ef, type: 3}
   - {fileID: 8300000, guid: 5ec510b012323a742af26f02d9cd2721, type: 3}
+  onTrigger: {fileID: 8300000, guid: c0964f195380a5942b13fe7182887056, type: 3}
   healthBar: {fileID: 547400362}
 --- !u!82 &680774970
 AudioSource:
