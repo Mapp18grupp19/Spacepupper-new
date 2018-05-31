@@ -27,7 +27,6 @@ public class PickUpCD : MonoBehaviour
         if (other.CompareTag("CD"))
         {
             //collide = true;
-            Destroy(other.gameObject);
             AudioClip clip;
             //playerAudio.pitch = Random.Range(0.9f, 1.1f);
             //playerAudio.PlayOneShot(onTrigger, 0.5f);
