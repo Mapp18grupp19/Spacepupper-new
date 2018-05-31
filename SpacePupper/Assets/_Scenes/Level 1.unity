@@ -1602,7 +1602,7 @@ GameObject:
   - component: {fileID: 450545339}
   - component: {fileID: 450545338}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1623,7 +1623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5, y: -50}
+  m_AnchoredPosition: {x: -34.20003, y: -50}
   m_SizeDelta: {x: 398, y: 93.64801}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &450545338
@@ -2148,20 +2148,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 159a20f6ddf4ede4fa9f6d8fb0c89e9b, type: 3}
-    m_FontSize: 65
+    m_FontSize: 87
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 76
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '0
-
-'
+  m_Text: 0
 --- !u!114 &633933945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2199,8 +2197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 387, y: -70}
-  m_SizeDelta: {x: 341.90002, y: 49.99695}
+  m_AnchoredPosition: {x: 344.99, y: -63.9}
+  m_SizeDelta: {x: 360.39, y: 72.87}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &637590431 stripped
 RectTransform:
